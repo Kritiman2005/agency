@@ -111,7 +111,7 @@ export default function Footer() {
               <li>
                 <span className="block text-white/50 text-sm md:text-base uppercase tracking-wider">Email</span>
                 <a href="mailto:upscale.agency19@gmail.com" className="hover:text-white transition-colors">
-                  upscale.agency19@gmail.com
+                  contact@upscaleagency.in
                 </a>
               </li>
               <li>
