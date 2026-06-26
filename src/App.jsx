@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
 import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import Team from './pages/Team';
 
 function App() {
   useEffect(() => {
@@ -38,7 +37,6 @@ function App() {
       <Routes>
         {/* Main Agency Platform Page */}
         <Route path="/" element={<Home />} />
-        <Route path="/team" element={<Team />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
