@@ -60,9 +60,7 @@ export default function CTA() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.6, delay: 0.3 }}
 					>
-						<CalEmbed
-							className="inline-flex items-center space-x-3 px-8 py-5 border border-brand-orange/40 bg-transparent text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 hover:bg-brand-orange/10 hover:scale-105"
-						>
+						<CalEmbed className="inline-flex items-center space-x-3 px-8 py-5 border border-brand-orange/40 bg-transparent text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 hover:bg-brand-orange/10 hover:scale-105">
 							Book a Call
 						</CalEmbed>
 					</motion.div>

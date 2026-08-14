@@ -18,7 +18,11 @@ export default function CalEmbed({ children = "Book a Call", className = "" }) {
 			window.Cal.ns["30min"]("popup");
 			return;
 		}
-		window.open("https://cal.com/upscaleagency/30min", "_blank", "noopener,noreferrer");
+		window.open(
+			"https://cal.com/upscaleagency/30min",
+			"_blank",
+			"noopener,noreferrer",
+		);
 	};
 
 	return (
