@@ -162,8 +162,7 @@ export default function Footer() {
 				{/* Bottom row */}
 				<div className="flex flex-col sm:flex-row items-center justify-between pt-8 text-sm md:text-base text-muted-text/60 gap-4">
 					<div>
-						&copy; {currentYear} UpScale. All rights
-						reserved.
+						&copy; {currentYear} UpScale. All rights reserved.
 					</div>
 					<div className="flex space-x-6">
 						<a
@@ -179,7 +178,7 @@ export default function Footer() {
 							Terms of Service
 						</a>
 						<a
-							href="/#"
+							href="/sitemap.xml"
 							className="hover:text-white transition-colors"
 						>
 							Sitemap
