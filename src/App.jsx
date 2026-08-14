@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Lenis from "lenis";
 import Home from "./pages/Home";
@@ -44,6 +46,8 @@ function App() {
 					element={<TermsOfServicePage />}
 				/>
 			</Routes>
+			<SpeedInsights />
+			<Analytics />
 		</Router>
 	);
 }
