@@ -119,10 +119,10 @@ export default function Footer() {
 									Email
 								</span>
 								<a
-									href="mailto:contact@upscaleagency.in"
+									href="mailto:support@upscaleagency.in"
 									className="hover:text-white transition-colors"
 								>
-									contact@upscaleagency.in
+									support@upscaleagency.in
 								</a>
 							</li>
 							<li>
@@ -162,18 +162,18 @@ export default function Footer() {
 				{/* Bottom row */}
 				<div className="flex flex-col sm:flex-row items-center justify-between pt-8 text-sm md:text-base text-muted-text/60 gap-4">
 					<div>
-						&copy; {currentYear} upscale.agency. All rights
+						&copy; {currentYear} UpScale. All rights
 						reserved.
 					</div>
 					<div className="flex space-x-6">
 						<a
-							href="/legal"
+							href="/privacy-policy"
 							className="hover:text-white transition-colors"
 						>
 							Privacy Policy
 						</a>
 						<a
-							href="/legal"
+							href="/terms-of-service"
 							className="hover:text-white transition-colors"
 						>
 							Terms of Service

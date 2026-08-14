@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CalEmbed from "./Cal";
 
 export default function CTA() {
 	return (
@@ -38,20 +39,32 @@ export default function CTA() {
 					</span>
 				</motion.h2>
 
-				{/* Action Button */}
-				<motion.div
-					initial={{ opacity: 0, scale: 0.9 }}
-					whileInView={{ opacity: 1, scale: 1 }}
-					viewport={{ once: true }}
-					transition={{ duration: 0.6, delay: 0.2 }}
-				>
-					<a
-						href="mailto:contact@upscaleagency.in"
-						className="inline-flex items-center space-x-3 px-8 py-5 bg-brand-orange hover:bg-brand-glow text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_8px_30px_rgba(255,91,46,0.3)] hover:shadow-[0_8px_40px_rgba(255,91,46,0.5)] hover:scale-105 group"
+				{/* Action Buttons */}
+				<div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
+					<motion.div
+						initial={{ opacity: 0, scale: 0.9 }}
+						whileInView={{ opacity: 1, scale: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6, delay: 0.2 }}
 					>
-						<span>Mail Us</span>
-					</a>
-				</motion.div>
+						<a
+							href="mailto:support@upscaleagency.in"
+							className="inline-flex items-center space-x-3 px-8 py-5 bg-brand-orange hover:bg-brand-glow text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_8px_30px_rgba(255,91,46,0.3)] hover:shadow-[0_8px_40px_rgba(255,91,46,0.5)] hover:scale-105 group"
+						>
+							<span>Mail Us</span>
+						</a>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0, scale: 0.9 }}
+						whileInView={{ opacity: 1, scale: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6, delay: 0.3 }}
+					>
+						<CalEmbed className="inline-flex items-center space-x-3 px-8 py-5 border border-brand-orange/40 bg-transparent text-white text-xs sm:text-sm font-bold uppercase tracking-widest rounded-sm transition-all duration-300 hover:bg-brand-orange/10 hover:scale-105">
+							Book a Call
+						</CalEmbed>
+					</motion.div>
+				</div>
 
 				{/* Minimal Subtext */}
 				<motion.p

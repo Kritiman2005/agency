@@ -372,10 +372,10 @@ export default function PrivacyContent() {
 				contact us:
 			</Paragraph>
 			<List>
-				<li>By email: contact@upscaleagency.in</li>
+				<li>By email support@upscaleagency.in</li>
 				<li>
 					By visiting this page on our website:
-					https://www.upscaleagency.in/legal
+					https://www.upscaleagency.in/privacy-policy
 				</li>
 				<li>By phone number: +918822617263</li>
 			</List>

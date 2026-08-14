@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Lenis from "lenis";
 import Home from "./pages/Home";
-import LegalPage from "./pages/LegalPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicy";
+import TermsOfServicePage from "./pages/TermsOfService";
 
 function App() {
 	useEffect(() => {
@@ -37,7 +38,11 @@ function App() {
 			<Routes>
 				{/* Main Agency Platform Page */}
 				<Route path="/" element={<Home />} />
-				<Route path="/legal" element={<LegalPage />} />
+				<Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+				<Route
+					path="/terms-of-service"
+					element={<TermsOfServicePage />}
+				/>
 			</Routes>
 		</Router>
 	);
