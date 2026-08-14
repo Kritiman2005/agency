@@ -8,7 +8,6 @@ const navLinks = [
 	{ name: "Work", href: "/#work" },
 	{ name: "Process", href: "/#process" },
 	{ name: "About", href: "/#about" },
-	{ name: "Legal", href: "/legal" },
 	{ name: "Contact", href: "/#contact" },
 ];
 
@@ -69,7 +68,7 @@ export default function Navbar() {
 					{/* CTA Button */}
 					<div className="hidden md:flex items-center space-x-4">
 						<a
-							href="mailto:contact@upscaleagency.in"
+							href="mailto:support@upscaleagency.in"
 							className="px-6 py-2.5 bg-brand-orange hover:bg-brand-glow text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-all duration-300 shadow-[0_4px_20px_-5px_rgba(255,91,46,0.4)] hover:shadow-[0_4px_25px_-2px_rgba(255,91,46,0.6)]"
 						>
 							LET'S TALK
