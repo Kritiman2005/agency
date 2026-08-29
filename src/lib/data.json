@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Assam Eduverse",
+    "logo": "/assam_eduverse.webp",
+    "link": "https://assameduverse.com"
+  },
+  {
+    "id": 2,
+    "name": "Tracktion Media",
+    "logo": "/tracktion_media.png",
+    "link": "https://www.linkedin.com/company/tracktion-media/about/"
+  },
+  {
+    "id": 3,
+    "name": "Arogya Dost",
+    "logo": "/arogya_dost.png",
+    "link": "https://www.aarogyadost.in"
+  },
+  {
+    "id": 4,
+    "name": "Ziddfit",
+    "logo": "/ziddfit.webp",
+    "link": "https://www.ziddfit.com/mission"
+  }
+]
