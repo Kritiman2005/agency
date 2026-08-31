@@ -4,7 +4,7 @@ export const BLOGS = [
     author: "Om Sai Agrawal",
     date: "31 Aug",
     title: "Who Is Upscale? The Team Helping Businesses Grow Online",
-    excerpt: "From frustrated beginner to power user: The hidden command ecosystem nobody talks about.",
+    excerpt: "Upscale is a team built around one simple belief: every business deserves a digital presence that actually works for them, not against them.",
     image: "/upscalebanner.png",
     content: `
 
