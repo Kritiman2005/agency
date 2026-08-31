@@ -16,6 +16,7 @@ const footerSections = [
 			{ name: "About Us", href: "#about" },
 			{ name: "Our Work", href: "#work" },
 			{ name: "Process Workflow", href: "#process" },
+			{ name: "Blog", href: "blogs" }
 		],
 	},
 ];

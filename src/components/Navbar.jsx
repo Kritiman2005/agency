@@ -9,6 +9,7 @@ const navLinks = [
 	{ name: "Process", href: "/#process" },
 	{ name: "About", href: "/#about" },
 	{ name: "Contact", href: "/#contact" },
+	{ name: "Blog", href: "/blogs" }
 ];
 
 export default function Navbar() {
@@ -34,15 +35,14 @@ export default function Navbar() {
 				initial={{ y: -100, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-				className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-					isScrolled
-						? "py-4 bg-[#050505]/75 backdrop-blur-md border-b border-white/5"
-						: "py-6 bg-transparent"
-				}`}
+				className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
+					? "py-4 bg-[#050505]/75 backdrop-blur-md border-b border-white/5"
+					: "py-6 bg-transparent"
+					}`}
 			>
 				<div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
 					{/* Logo */}
-					<a href="#home" className="flex items-center">
+					<a href="/" className="flex items-center">
 						<span
 							className="text-xl md:text-2xl font-bold tracking-wider text-white"
 							style={{ fontFamily: "'Amarante', cursive" }}

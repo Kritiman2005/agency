@@ -98,3 +98,21 @@ Make sure you have Node.js (version 18+) installed on your machine.
    ```bash
    npm run build
    ```
+
+---
+
+## 📝 Markdown Blogs Feature
+
+A custom-built single-file blogging system to easily write, manage, and read blogs with high-end typography and perfect SEO.
+
+### 1. Managing Blogs
+All blog data and content is stored in a single file: `src/lib/blogData.js`. 
+To add a new blog, simply append a new object to the `BLOGS` array. You can write the actual content using standard Markdown syntax (e.g., `# Heading`, `**bold**`, `[link](url)`) inside backticks (`\``) for the `content` property.
+
+### 2. The Blog Feed
+The main `/blogs` page imports this single data file and maps over it to render a luxury, dark-themed feed inspired by modern minimalist blogs. 
+
+### 3. The Individual Blog Page & SEO
+Clicking a blog navigates to `/blogs/:id`. This page reads the URL ID, finds the correct blog in `blogData.js`, and uses `react-markdown` with `@tailwindcss/typography` to render the content perfectly with the `prose` class.
+
+The page automatically updates the `<title>` and `<meta name="description">` to the specific blog's title and excerpt using `react-helmet-async`, giving you the best possible SEO for a React SPA out of the box!
