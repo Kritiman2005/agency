@@ -1,6 +1,6 @@
 export const BLOGS = [
   {
-    id: "i-wasted-6-months-using-claude-code-wrong",
+    id: "Who Is Upscale?",
     author: "Om Sai Agrawal",
     date: "31 Aug",
     title: "Who Is Upscale? The Team Helping Businesses Grow Online",
