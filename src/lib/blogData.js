@@ -1,6 +1,6 @@
 export const BLOGS = [
   {
-    id: "Who Is Upscale?",
+    id: "who-is-upscale",
     author: "Om Sai Agrawal",
     date: "31 Aug",
     title: "Who Is Upscale? The Team Helping Businesses Grow Online",
