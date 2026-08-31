@@ -6,6 +6,8 @@ import Lenis from "lenis";
 import Home from "./pages/Home";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import TermsOfServicePage from "./pages/TermsOfService";
+import Blogs from "./pages/Blogs";
+import BlogPost from "./pages/BlogPost";
 
 function App() {
 	useEffect(() => {
@@ -40,6 +42,8 @@ function App() {
 			<Routes>
 				{/* Main Agency Platform Page */}
 				<Route path="/" element={<Home />} />
+				<Route path="/blogs" element={<Blogs />} />
+				<Route path="/blogs/:id" element={<BlogPost />} />
 				<Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
 				<Route
 					path="/terms-of-service"

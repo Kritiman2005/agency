@@ -10,19 +10,20 @@ const Clients = () => {
             Trusted By Industry Leaders
           </h2>
         </div>
-        
+
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-80">
           {clientsData.map((client) => (
-            <a 
-              key={client.id} 
-              href={client.link} 
-              target="_blank" 
+            <a
+              key={client.id}
+              href={client.link}
+              alt={client.alt}
+              target="_blank"
               rel="noopener noreferrer"
               className="group transition-all duration-500 ease-in-out"
             >
-              <img 
-                src={client.logo} 
-                alt={`${client.name} logo`} 
+              <img
+                src={client.logo}
+                alt={`${client.name} logo`}
                 className="h-10 md:h-14 w-auto object-contain transition-all duration-500 ease-in-out filter brightness-0 invert-[0.4] group-hover:invert-[1]"
                 style={{ filter: 'brightness(0) invert(0.4)' }}
                 onMouseEnter={(e) => e.currentTarget.style.filter = 'brightness(0) invert(1)'}
