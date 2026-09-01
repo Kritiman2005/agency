@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 const footerSections = [
@@ -16,7 +17,7 @@ const footerSections = [
 			{ name: "About Us", href: "#about" },
 			{ name: "Our Work", href: "#work" },
 			{ name: "Process Workflow", href: "#process" },
-			{ name: "Blog", href: "blogs" }
+			{ name: "Blog", href: "/blogs" }
 		],
 	},
 ];
@@ -38,14 +39,14 @@ export default function Footer() {
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-10 lg:gap-16 pb-16 border-b border-white/5">
 					{/* Brand Col */}
 					<div className="col-span-2 lg:col-span-4 space-y-6">
-						<a href="#home" className="flex items-center">
+						<Link href="/#home" className="flex items-center">
 							<span
 								className="text-xl md:text-4xl font-bold tracking-wider text-white"
 								style={{ fontFamily: "'Amarante', cursive" }}
 							>
 								UpScale
 							</span>
-						</a>
+						</Link>
 						<p className="text-sm text-muted-text/80 max-w-sm leading-relaxed">
 							We design, build, and scale digital products that
 							drive measurable business growth. A modern
@@ -97,12 +98,12 @@ export default function Footer() {
 							<ul className="space-y-3">
 								{sec.links.map((link) => (
 									<li key={link.name}>
-										<a
+										<Link
 											href={link.href}
 											className="text-sm text-muted-text hover:text-white transition-colors duration-200"
 										>
 											{link.name}
-										</a>
+										</Link>
 									</li>
 								))}
 							</ul>
@@ -166,24 +167,24 @@ export default function Footer() {
 						&copy; {currentYear} UpScale. All rights reserved.
 					</div>
 					<div className="flex space-x-6">
-						<a
+						<Link
 							href="/privacy-policy"
 							className="hover:text-white transition-colors"
 						>
 							Privacy Policy
-						</a>
-						<a
+						</Link>
+						<Link
 							href="/terms-of-service"
 							className="hover:text-white transition-colors"
 						>
 							Terms of Service
-						</a>
-						<a
+						</Link>
+						<Link
 							href="/sitemap.xml"
 							className="hover:text-white transition-colors"
 						>
 							Sitemap
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

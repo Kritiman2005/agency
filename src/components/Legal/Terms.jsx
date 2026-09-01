@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { SectionTitle, SubTitle, Paragraph, List } from "../../pages/LegalPage";
+import { SectionTitle, SubTitle, Paragraph, List } from "./LegalPage";
 
 export default function TermsContent() {
 	return (

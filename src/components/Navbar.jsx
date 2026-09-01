@@ -1,5 +1,7 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const navLinks = [
@@ -42,26 +44,26 @@ export default function Navbar() {
 			>
 				<div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
 					{/* Logo */}
-					<a href="/" className="flex items-center">
+					<Link href="/" className="flex items-center">
 						<span
 							className="text-xl md:text-2xl font-bold tracking-wider text-white"
 							style={{ fontFamily: "'Amarante', cursive" }}
 						>
 							UpScale
 						</span>
-					</a>
+					</Link>
 
 					{/* Desktop Nav Links */}
 					<div className="hidden md:flex items-center space-x-8">
 						{navLinks.map((link) => (
-							<a
+							<Link
 								key={link.name}
 								href={link.href}
 								className="text-sm font-medium text-muted-text hover:text-white transition-colors duration-200 relative group"
 							>
 								{link.name}
 								<span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-brand-orange transition-all duration-300 group-hover:w-full" />
-							</a>
+							</Link>
 						))}
 					</div>
 
@@ -101,20 +103,23 @@ export default function Navbar() {
 
 						<div className="flex flex-col space-y-6 text-center z-10">
 							{navLinks.map((link, i) => (
-								<motion.a
+								<Link
 									key={link.name}
 									href={link.href}
 									onClick={() => setIsOpen(false)}
-									initial={{ opacity: 0, y: 15 }}
-									animate={{ opacity: 1, y: 0 }}
-									transition={{
-										delay: i * 0.05,
-										duration: 0.5,
-									}}
-									className="text-2xl font-bold font-display text-muted-text hover:text-brand-orange transition-colors"
 								>
-									{link.name}
-								</motion.a>
+									<motion.span
+										initial={{ opacity: 0, y: 15 }}
+										animate={{ opacity: 1, y: 0 }}
+										transition={{
+											delay: i * 0.05,
+											duration: 0.5,
+										}}
+										className="block text-2xl font-bold font-display text-muted-text hover:text-brand-orange transition-colors"
+									>
+										{link.name}
+									</motion.span>
+								</Link>
 							))}
 
 							<motion.div
