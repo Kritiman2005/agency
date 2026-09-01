@@ -1,3 +1,0 @@
-module.exports=[19821,a=>{"use strict";var b=a.i(87924);a.i(72131),a.s(["List",0,({children:a})=>(0,b.jsx)("ul",{className:"list-disc list-inside text-muted-text/80 leading-relaxed font-sans text-base space-y-2 mb-6 ml-4",children:a}),"Paragraph",0,({children:a})=>(0,b.jsx)("p",{className:"text-muted-text/80 leading-relaxed font-sans text-base mb-6",children:a}),"SectionTitle",0,({children:a})=>(0,b.jsx)("h2",{className:"text-2xl font-display font-bold uppercase tracking-wide text-white mt-12 mb-6 border-b border-white/10 pb-4",children:a}),"SubTitle",0,({children:a})=>(0,b.jsx)("h3",{className:"text-xl font-display font-semibold text-white/90 mt-8 mb-4",children:a})])}];
-
-//# sourceMappingURL=src_components_Legal_LegalPage_jsx_04ravlm._.js.map
