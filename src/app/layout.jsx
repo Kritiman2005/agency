@@ -11,7 +11,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <head>
+        {/* Google Fonts – same as original */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Amarante&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased bg-[#050505] text-[#ffffff] overflow-x-hidden">
         <SmoothScroll>
           {/* Global Grain/Film-noise Texture */}
           <div className="noise-overlay" />

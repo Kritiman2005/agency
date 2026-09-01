@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { HiArrowDown } from "react-icons/hi";
 
@@ -212,12 +213,13 @@ export default function Hero() {
 								}}
 								className="w-full h-full border border-white/10 rounded-sm overflow-hidden bg-black shadow-2xl relative"
 							>
-								<img
-									src={card.img}
-									alt="Premium Showcase"
-									className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
-									loading="lazy"
-								/>
+								<Image
+                  src={card.img}
+                  alt="Premium Showcase"
+                  className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+                  width={600}
+                  height={800}
+                />
 							</motion.div>
 
 							{/* Nested/Overlapping card details if they exist */}
@@ -244,12 +246,13 @@ export default function Hero() {
 										}}
 										className="w-full h-full"
 									>
-										<img
-											src={card.overlay.img}
-											alt="Overlay visual"
-											className="w-full h-full object-cover grayscale brightness-95 group-hover/overlay:grayscale-0 transition-all duration-500"
-											loading="lazy"
-										/>
+										<Image
+                  src={card.overlay.img}
+                  alt="Overlay visual"
+                  className="w-full h-full object-cover grayscale brightness-95 group-hover/overlay:grayscale-0 transition-all duration-500"
+                  width={300}
+                  height={300}
+                />
 									</motion.div>
 								</motion.div>
 							)}
