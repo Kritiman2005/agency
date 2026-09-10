@@ -4,32 +4,37 @@
 
   <url>
        <loc>https://www.upscaleagency.in/</loc>
-       <lastmod>2026-09-01T20:56:47+00:00</lastmod>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
        <priority>1.0000</priority>
   </url>
   <url>
        <loc>https://www.upscaleagency.in/blogs</loc>
-       <lastmod>2026-09-01T20:56:47+00:00</lastmod>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://www.upscaleagency.in/privacy-policy</loc>
-       <lastmod>2026-09-01T20:56:47+00:00</lastmod>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://www.upscaleagency.in/terms-of-service</loc>
-       <lastmod>2026-09-01T20:56:47+00:00</lastmod>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://www.upscaleagency.in/sitemap.xml</loc>
-       <lastmod>2026-09-01T20:56:47+00:00</lastmod>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
+       <loc>https://www.upscaleagency.in/blogs/wordpress-vs-custom-website</loc>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
        <loc>https://www.upscaleagency.in/blogs/who-is-upscale</loc>
-       <lastmod>2026-09-01T20:56:47+00:00</lastmod>
+       <lastmod>2026-09-10T11:21:22+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
 </urlset>
