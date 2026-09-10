@@ -9,6 +9,8 @@ import Link from "next/link";
 import { BLOGS } from "../../lib/blogData";
 
 export default function Blogs() {
+  const blogs = [...BLOGS].reverse();
+
   return (
     <>
       <Navbar />
@@ -32,7 +34,7 @@ export default function Blogs() {
           </motion.div>
 
           <div className="space-y-12">
-            {BLOGS.map((blog, index) => (
+            {blogs.map((blog, index) => (
               <motion.article
                 key={blog.id}
                 initial={{ opacity: 0, y: 20 }}
